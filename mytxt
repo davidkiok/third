@@ -1,0 +1,43 @@
+Hello
+
+git remote origin git https url
+
+git remote add newo < git ssh url >
+
+solar@solar [~/dev/third]$ git push --set-upstream  origin master
+Username for 'https://github.com': davidkiok
+Password for 'https://davidkiok@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/davidkiok/third.git/'
+solar@solar [~/dev/third]$ git add remote origin git@github.com:davidkiok/third.git
+fatal: pathspec 'remote' did not match any files
+solar@solar [~/dev/third]$ git  remote add  origin git@github.com:davidkiok/third.git
+error: remote origin already exists.
+solar@solar [~/dev/third]$ git  remote add  newo git@github.com:davidkiok/third.git
+solar@solar [~/dev/third]$ git push newo 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 255 bytes | 255.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/davidkiok/third/pull/new/master
+remote: 
+To github.com:davidkiok/third.git
+ * [new branch]      master -> master
+solar@solar [~/dev/third]$ ll
+total 24K
+drwxrwxr-x 3 solar solar 4.0K Dec 11 07:56 .
+drwxrwxr-x 6 solar solar 4.0K Dec 11 07:48 ..
+drwxrwxr-x 8 solar solar 4.0K Dec 11 08:05 .git
+-rw-rw-r-- 1 solar solar 3.1K Dec 11 07:56 .gitignore
+-rw-rw-r-- 1 solar solar 1.1K Dec 11 07:56 LICENSE
+-rw-rw-r-- 1 solar solar    0 Dec 11 07:56 mytxt
+-rw-rw-r-- 1 solar solar    7 Dec 11 07:56 README.md
+solar@solar [~/dev/third]$ vim mytxt 
+solar@solar [~/dev/third]$ 
+
